@@ -101,13 +101,11 @@ $$
 - `SBO` + `MLM` : 실제로는 cross entropy 계산시, `MLM` 도 사용
     - 아예 안쓴다는 말이 아니었음
 
-$$
-\begin{align*}
+$$\begin{align*}
 \mathcal{L}
 &=\mathcal{L}_{MLM}(\mathrm{football})+\mathcal{L}_{SBO}(\mathrm{football})\\
 &=-\log P(\mathrm{football|x_7})-\log P(\mathrm{football|x_4,x_9,p_3})
-\end{align*}
-$$
+\end{align*}$$
 
 위 식은 간단하게 표현한 것이로 실제 모델에서는 다음이 일어난다.
 
